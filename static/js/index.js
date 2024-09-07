@@ -61,7 +61,7 @@ const createAlert = () => {
 const muyuScale = () => {
   if (easterEgg) {
     miao.className = 'clickDown';
-    miao.src = "./static/img/从小喝到大.png";
+    miao.src = "./static/img/cxhdd.png";
     setTimeout(_ => {
       miao.className = '';
     }, 200)
