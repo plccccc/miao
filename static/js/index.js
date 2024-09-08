@@ -95,6 +95,11 @@ miao.onclick = () => {
 window.addEventListener("keydown", function (event) {
   const { code } = event;
   if (code == 'Space') {
+    if (Math.random() <= 0.1) {
+      easterEgg = true;
+    }else {
+      easterEgg = false;
+    }
     muyuScale();
     createAlert()
   }
