@@ -6,8 +6,10 @@
 
 const miao = document.querySelector("#miao-img");
 const listBox = document.querySelector(".gongde");
+const countBox = document.querySelector("#number")
 
 let easterEgg = false;
+let count = 0;
 
 //弹幕列表
 const textList = [
@@ -59,6 +61,8 @@ const createAlert = () => {
 
 //木鱼点击后的效果
 const muyuScale = () => {
+  count++;
+  countBox.innerText = `plc计数菌提示：喵桑已被玩弄${count}次`;
   if (easterEgg) {
     miao.className = 'clickDown';
     miao.src = "./static/img/cxhdd.png";
@@ -73,7 +77,6 @@ const muyuScale = () => {
       miao.src = "./static/img/miao.png";
     }, 200)
   }
-  
 }
 
 let body = document.body;
